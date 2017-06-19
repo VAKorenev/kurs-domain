@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+	<title>СПВВИУС, 22 курс, 1992-1997 г.г.</title>
+	<link rel="stylesheet" href="_css/default.css">
+	<script src="_lib/angular-1.2.32/angular.js"></script>
+	<script src="_lib/angular-1.2.32/angular-route.min.js"></script>
+	<script src="_lib/default.js"></script>
+</head>
+<body>
+<div class="header">Информационный портал выпускников СПВВИУС 22 курса, 1997 года выпуска</div>
+<div class="container">
+	<div class="menu" ng-controller="menuCtrl">
+		<ul>
+			<li><a href="#history">История училища</a></li>
+			<li><a href="#historyOf22kurs">История курса</a></li>
+			<li><a href="#news">Новости</a></li>
+			<li><a href="#photo">Фотографии</a></li>
+			<li><a href="#meetings">Встречи</a></li>
+			<li><a href="#auth">Авторизация</a></li>
+		</ul>
+	</div>
+	<div class="content"><p ng-view></p>
+	<div class="empty-line"></div>
+	</div>
+	<div class="settings"><p>Настройки</p></div>
+</div>
+<div class="footer">22 курс, 1992-1997 г.г.</div>
+</body>
+</html>

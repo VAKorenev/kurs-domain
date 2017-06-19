@@ -1,0 +1,107 @@
+html {
+	height: 100%;
+}
+
+* html body {
+	height: 100%;
+}
+
+body {
+	position:relative;
+	/*font-family: Tahoma, Arial, Verdana, Sans-serif, Lucida Sans;*/
+	font: 10pt Tahoma;
+	min-height: 100%;
+	padding: 0;
+	margin: 0 auto;
+	background: url("../_images/128-196.jpg") lightgray;
+	width: 900px;
+}
+
+.header{
+	background-color: #002f5e;
+	height: 80px;
+	line-height: 80px;
+	padding-left: 20px;
+	font-size: 150%;
+	color: #FFF;
+}
+
+.container{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 80px;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.menu {
+	position: absolute;
+	width: 149px;
+	height: 100%;
+	border-right: 1px solid darkgray;
+	background-color: #FFF;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 20px 10px 10px 10px;
+	padding: 0;
+}
+
+.menu li {
+	margin: 10px 10px 0 0;
+}
+
+.menu ul a {
+	color: #002f5e;
+	text-decoration: none;
+}
+
+.content{
+	position: absolute;
+	left: 150px;
+	width: 600px;
+	height: 100%;
+	/*margin: 10px 10px 10px 10px;*/
+	color: #002f5e;
+	background-color: #FFF;
+	overflow: auto;
+}
+
+.content p {
+	margin: 20px 5px 5px 10px;
+}
+.empty-line {
+	height: 25px;
+}
+
+.settings{
+	position: absolute;
+	left: 750px;
+	width: 150px;
+	height: 100%;
+	/*margin: 20px 10px 10px 10px;*/
+	color: #002f5e;
+	background-color: #FFF;
+}
+
+.settings p {
+	margin: 20px 10px 0 10px;
+}
+
+.footer{
+	position:absolute;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width:100%;
+	bottom:0;
+	padding:1px 0;
+	background-color: #002f5e;
+	font-size: 80%;
+	color: #FFF;
+}
