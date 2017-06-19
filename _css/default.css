@@ -74,6 +74,7 @@ body {
 
 .content p {
 	margin: 20px 5px 5px 10px;
+	text-align: justify;
 }
 .empty-line {
 	height: 25px;
