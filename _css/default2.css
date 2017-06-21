@@ -27,22 +27,25 @@ body {
 }
 
 .container{
-	position: absolute;
+	/*position: absolute;*/
 	left: 0;
 	right: 0;
 	top: 80px;
-	bottom: 0;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
+	background: #FFF;
+	min-height: 100%;
 }
 
 .menu {
-	position: absolute;
+	float: left;
+	margin-right: 1px;
 	width: 200px;
 	height: 100%;
 	background-color: #FFF;
+	padding-bottom:32767px; margin-bottom:-32767px;
 }
 
 .menu ul {
@@ -62,7 +65,7 @@ body {
 }
 
 .content{
-	position: absolute;
+	float: left;
 	/*display: table-cell;*/
 	left: 201px;
 	width: 499px;
@@ -105,13 +108,14 @@ body {
 }
 
 .settings{
-	position: absolute;
+	float: right;
 	right: 0px;
 	width: 199px;
 	height: 100%;
 	/*margin: 20px 10px 10px 10px;*/
 	color: #002f5e;
 	background-color: #FFF;
+	padding-bottom:32767px; margin-bottom:-32767px;
 }
 
 .settings p {
@@ -160,7 +164,7 @@ hr{
 }
  
 .footer{
-	position:absolute;
+	/*position:absolute;*/
 	height: 20px;
 	line-height: 20px;
 	text-align: center;
@@ -170,6 +174,7 @@ hr{
 	background-color: #002f5e;
 	font-size: 80%;
 	color: #FFF;
+	display: none;
 }
 
 .message-center{

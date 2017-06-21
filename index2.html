@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>СПВВИУС, 22 курс, 1992-1997 г.г.</title>
-	<link rel="stylesheet" href="_css/default.css">
+	<link rel="stylesheet" href="_css/default2.css">
 	<script src="_lib/angular-1.2.32/angular.js"></script>
 	<script src="_lib/angular-1.2.32/angular-route.min.js"></script>
 	<script src="_lib/default.js"></script>
@@ -14,10 +14,10 @@
 		<div class="menu" ng-controller="menuCtrl">
 			<ul>
 				<li><a href="#history">История училища</a></li>
-				<li><a href="#historyOf22kurs">История курса</a></li>
 				<li><a href="#news">Новости</a></li>
 				<li><a href="#publicphoto">Фотографии</a></li>
 				<li><a ng-show="!dataFctrl.auth" ng-click="showSecureForm()">Авторизация</a></li>
+				<li><a href="#historyOf22kurs" ng-show="dataFctrl.auth">История курса</a></li>
 				<li><a href="#myhistory" ng-show="dataFctrl.auth">Наши истории</a></li>
 				<li><a href="#meetings" ng-show="dataFctrl.auth">Наши встречи</a></li>
 				<li><a href="#myphoto" ng-show="dataFctrl.auth">Наши фотографии</a></li>
