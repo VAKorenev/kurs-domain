@@ -26,13 +26,21 @@ App.config(['$routeProvider', function($routeProvider){
         templateUrl: './_photo/photos.html',
         controller: 'photoCtrl'
     }).
+    when('/publicphoto', {
+        templateUrl: './_publicphoto/publicphoto.html',
+        controller: 'publicphotoCtrl'
+    }).
     when('/meetings', {
         templateUrl: './_meetings/meetings.html',
         controller: 'meetingsCtrl'
     }).
-    when('/auth', {
-        templateUrl: './_personalPage/auth.html',
-        controller: 'authCtrl'
+    when('/mykurs', {
+        templateUrl: './_mycurs/mycurs.html',
+        controller: 'mycursCtrl'
+    }).
+    when('/mypage', {
+        templateUrl: './_mypage/mypage.html',
+        controller: 'mypageCtrl'
     }).
     when('/roman.h', {
         templateUrl: './_personalPage/roman.h.html',
@@ -55,6 +63,21 @@ App.controller('historyCtrl',['$scope','$http', 'dataFctrl', function($scope, $h
 }]);
 
 App.controller('historyOf22kursCtrl',['$scope','$http','$location','dataFctrl', function($scope, $http, $location, dataFctrl){
+    // $location.path("#history");
+    console.log("Надо пройти регистрацию");
+}]);
+
+App.controller('mycursCtrl',['$scope','$http','$location','dataFctrl', function($scope, $http, $location, dataFctrl){
+    // $location.path("#history");
+    console.log("Надо пройти регистрацию");
+}]);
+
+App.controller('mypageCtrl',['$scope','$http','$location','dataFctrl', function($scope, $http, $location, dataFctrl){
+    // $location.path("#history");
+    console.log("Надо пройти регистрацию");
+}]);
+
+App.controller('publicphotoCtrl',['$scope','$http','$location','dataFctrl', function($scope, $http, $location, dataFctrl){
     // $location.path("#history");
     console.log("Надо пройти регистрацию");
 }]);

@@ -14,10 +14,10 @@
 		<div class="menu" ng-controller="menuCtrl">
 			<ul>
 				<li><a href="#history">История училища</a></li>
+				<li><a href="#historyOf22kurs">История курса</a></li>
 				<li><a href="#news">Новости</a></li>
 				<li><a href="#publicphoto">Фотографии</a></li>
 				<li><a ng-show="!dataFctrl.auth" ng-click="showSecureForm()">Авторизация</a></li>
-				<li><a href="#historyOf22kurs" ng-show="dataFctrl.auth">История курса</a></li>
 				<li><a href="#myhistory" ng-show="dataFctrl.auth">Наши истории</a></li>
 				<li><a href="#meetings" ng-show="dataFctrl.auth">Наши встречи</a></li>
 				<li><a href="#myphoto" ng-show="dataFctrl.auth">Наши фотографии</a></li>
